@@ -1,6 +1,6 @@
 import { Post } from '../types';
 
-#const API_URL = 'https://karpathytalk.com/api/posts';
+//const API_URL = 'https://karpathytalk.com/api/posts';
 const API_URL = 'https://weathered-thunder-889b.iggymacd.workers.dev';
 
 let mockIdCounter = 154320;

@@ -186,7 +186,7 @@ export default function App() {
                     </span>
                   </div>
                   <p className="text-sm text-[#ccc] leading-relaxed break-words">
-                    {post.content}
+                    {post.content_markdown || post.content}:
                   </p>
                   <div className="mt-3 flex items-center gap-4 text-[#555] text-xs">
                     <span>ID: {post.id}</span>

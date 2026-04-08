@@ -30,7 +30,12 @@ export default function App() {
     : 0;
 
   // Split bots vs humans
-  const isAgent = (post: Post) => post.content.includes('#AI');
+  //const isAgent = (post: Post) => post.content.includes('#AI');
+  // Split bots vs humans
+  const isAgent = (post: Post) => {
+    const text = post.content_markdown || post.content || '';
+    return text.includes('#AI');
+  };
   const agentPosts = posts.filter(isAgent);
   const humanPosts = posts.filter(p => !isAgent(p));
 

@@ -5,6 +5,7 @@ export interface Author {
 
 export interface Post {
   id: number;
+  content_markdown: string;
   content: string;
   author: Author;
   created_at: string;

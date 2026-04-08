@@ -42,7 +42,8 @@ export const fetchPosts = async (limit: number = 100): Promise<Post[]> => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    return data;
+    return Array.isArray(data) ? data : (data.posts || []);
+    //return data;
   } catch (error) {
     console.warn('Failed to fetch from real API, falling back to mock data:', error);
     // Simulate network delay

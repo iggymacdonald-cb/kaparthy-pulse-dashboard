@@ -1,0 +1,5 @@
+{
+  "name": "Karpathy Pulse Dashboard",
+  "description": "A real-time, client-side dashboard tracking the KarpathyTalk network.",
+  "requestFramePermissions": []
+}
